@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "RTP Play+",
+	"version": "1.0",
+	"author" : "magical blob",
+	"description": "Enhance your RTP Play experience. This is an unofficial extension and is not sponsored, owned, nor endorsed by RTP.",
+	"homepage_url": "https://flamino.eu/projects/rtp-play-plus/",
+	"icons": {
+		"48": "icons/icon-48.png",
+		"96": "icons/icon-96.png",
+		"235": "icons/icon-235.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.rtp.pt/play/p*"],
+			"js": ["main.js"]
+		}
+	]
+}
